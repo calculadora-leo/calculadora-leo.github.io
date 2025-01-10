@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA DE LEO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="caja">
+        <div id="pantalla"></div>
+            <div class="botones">
+                <button onclick="cambiaracero(); separadores()" class="cero">c</button>
+                <button onclick="escribirnumero('*'); separadores()" class="multiplicacion">x</button>
+                <button onclick="escribirnumero('/'); separadores()"class="divicion">÷</button>
+                <button onclick="borrar()" class="borrar">⌫</button>
+                <button onclick="escribirnumero('7'); separadores()"class="numero7">7</button>
+                <button onclick="escribirnumero('8'); separadores()"class="numero8">8</button>
+                <button onclick="escribirnumero('9'); separadores()"class="numero9">9</button>
+                <button onclick="escribirnumero('+'); separadores()"class="suma">+</button>
+                <button onclick="escribirnumero('4'); separadores()"class="numero4">4</button>
+                <button onclick="escribirnumero('5'); separadores()"class="numero5">5</button>
+                <button onclick="escribirnumero('6'); separadores()"class="numero6">6</button>
+                <button onclick="escribirnumero('-'); separadores()"class="resta">-</button>
+                <button onclick="escribirnumero('1'); separadores()" class="numero1">1</button>
+                <button onclick="escribirnumero('2'); separadores()"class="numero2">2</button>
+                <button onclick="escribirnumero('3'); separadores()"class="numero3">3</button>
+                <button onclick="calcular()"class="igual">=</button>
+                <button onclick="escribirnumero('0'); separadores()"class="numero0">0</button>
+                <button onclick="escribirnumero(',')"class="coma">,</button>
+            </div>
+        
+    </div>
+    <script src="scritp.js"></script>
+</body>
+</html>

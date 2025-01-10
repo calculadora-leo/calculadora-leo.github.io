@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left , rgb(82, 53, 243)25%, rgb(120, 42, 209) 75%);
+}
+.caja{
+    display: flexbox;
+    width: 350px;
+    height: 530px;
+    margin-top: 45px;
+    border-radius: 15px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow:  0px 0px 36px #606060;
+            
+}
+#pantalla{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 82%;
+    height: 10%;
+    background-color: #f0efef;
+    margin: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid #dcdada;
+    font-family: monospace;
+    font-size: 35px;
+    overflow: hidden;
+}
+.botones{
+    display: grid;
+    grid-template-columns:repeat(4,70px) ;
+    grid-template-rows: repeat(5,70px);
+    gap: 10px;
+    width: 88%;
+    height: 75%;
+    margin-left: 20px;
+    background-color: #ffffff;
+    padding: 0px;
+}
+
+.botones>button:not(.numero0,.igual){
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: monospace;
+    border: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+.botones>button:hover:not(.igual,.borrar){
+    background-color: #68c9f654;
+}
+.botones>button:active:not(.igual,.borrar){
+    background-color: rgba(80, 183, 252, 0.661);
+}
+.numero0{
+    border-radius: 15px;
+    font-family: monospace;
+    font-size: 25px;
+    border: 0px;
+    cursor: pointer;
+    grid-column-start: 1;
+    grid-column: span 2;
+    grid-row-start: 5;
+}
+.operadores{
+    display: grid;
+    width: 80px;
+}
+
+
+.igual{
+    border-radius: 15px;
+    cursor: pointer;
+    border: 0px;
+    font-family: monospace;
+    font-size: 45px;
+    grid-row: span 2;
+    background-color: rgba(65, 150, 241, 0.938);
+}
+.igual:hover{
+    background-color: rgb(42, 143, 250);
+}
+.borrar{
+    background-color: rgba(255, 58, 97, 0.69);
+}
+.borrar:hover{
+    background-color: rgba(241, 65, 86, 0.866);   
+}
+.borrar:active{
+    background-color: rgba(246, 23, 49, 0.918);
+}
+.igual:active{
+    background-color: rgb(13, 111, 247)
+}
