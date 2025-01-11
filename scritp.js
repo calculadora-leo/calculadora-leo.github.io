@@ -18,13 +18,21 @@ function borrar() {
 function calcular() {
     const pantalla = document.getElementById("pantalla");
     try {
-        pantalla.textContent = eval(pantalla.textContent.replace(/\,/g, ''));
+        let operacion = pantalla.textContent.replace(/\,/g, '');
+        let resultado = eval(operacion);
+        pantalla.textContent = resultado;
         coma();
-    } catch (e) {
-        alert("OPERACION NO VALIDA, INTENTE NUEVAMENTE 😥");
-        pantalla.textContent = "";
+        
+        if (resultado === Infinity){
+        pantalla.textContent("");
+        }
+        }   
+        catch (e) {
+            alert("OPERACION NO VALIDA, INTENTE NUEVAMENTE 😥");
+            pantalla.textContent = "";
+        }
     }
-}
+
 
 function coma() {
     const pantalla = document.getElementById("pantalla");
@@ -33,4 +41,6 @@ function coma() {
     contenido = contenido.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     pantalla.textContent = contenido;
 }
+
+
 
