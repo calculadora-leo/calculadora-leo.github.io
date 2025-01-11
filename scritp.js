@@ -21,7 +21,7 @@ function calcular() {
         pantalla.textContent = eval(pantalla.textContent.replace(/\,/g, ''));
         coma();
     } catch (e) {
-        alert("OPERACION NO VALIDA INTENTE NUEVAMENTE");
+        alert("OPERACION NO VALIDA, INTENTE NUEVAMENTE 😥");
         pantalla.textContent = "";
     }
 }
