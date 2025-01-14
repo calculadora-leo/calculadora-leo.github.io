@@ -101,6 +101,7 @@ body{
 }
 @media (min-width:480px) and (max-width:700px){
     #pantalla{
-        font-size: 40px;
+        font-size: 45px;
+        
     }
 }
