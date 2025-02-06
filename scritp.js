@@ -1,3 +1,4 @@
+//CREADOR: LEONARDO ROPAIN 7/01/25
 function cambiaracero() {
     const pantalla = document.getElementById("pantalla");
     pantalla.textContent = ""; 
