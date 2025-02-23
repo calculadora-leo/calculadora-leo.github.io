@@ -31,6 +31,7 @@ function calcular() {
         catch (e) {
             alert("OPERACION NO VALIDA, INTENTE NUEVAMENTE 😥");
             pantalla.textContent = "";
+            
         }
     }
 
