@@ -36,13 +36,19 @@ function calcular() {
     }
 
 
-function coma() {
-    const pantalla = document.getElementById("pantalla");
-    let contenido = pantalla.textContent;
-    contenido = contenido.replace(/\,/g, '');
-    contenido = contenido.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    pantalla.textContent = contenido;
-}
+    function coma() {
+        const pantalla = document.getElementById("pantalla");
+        let contenido = pantalla.textContent.replace(/,/g, ''); // Eliminar comas previas
+        
+        if (!isNaN(contenido) && contenido.includes(".")) {
+            let [entero, decimal] = contenido.split(".");
+            entero = entero.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            pantalla.textContent = `${entero}.${decimal}`;
+        } else {
+            pantalla.textContent = contenido.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+    }
+    
 
 
 

@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 body{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +35,8 @@ body{
     overflow: hidden;
     white-space: nowrap;
     box-shadow: inset 0px 0px 10px rgba(189, 189, 189, 0.673);
+    font-family: "Oswald", serif;
+    font-weight: 400;
 }
 .botones{
     display: grid;
